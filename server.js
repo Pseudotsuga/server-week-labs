@@ -18,8 +18,12 @@ app.use(cors);
 const PORT = process.env.PORT || 3000;
 
 //Routes
-app.get('/', (req, res) => {
-  return res.status(200).send('You made it!');
+app.get('*', (req,res) => {
+  res.send('You made it!');
+});
+
+app.get('/test', (req, res) => {
+  res.send('testing testing 123');
 });
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
