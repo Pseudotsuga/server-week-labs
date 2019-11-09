@@ -1,0 +1,20 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "ciyt_explorer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pseudotsuga/server-week-labs.git"
+  },
+  "author": "Conor McCue",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
