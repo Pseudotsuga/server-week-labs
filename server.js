@@ -23,6 +23,12 @@ app.get('/', (request,response) => response.send('You made it!'));
 
 app.get('/test', (req, res) => res.send('testing testing 123'));
 
+app.get('/location', locationRouter);
+
+function locationRouter(request, response){
+  console.log(request);
+}
+
 //Start listening, think about this like an event listener(the whole server code) attached to the port
 //A node http.Server is returned
 const PORT = process.env.PORT;
