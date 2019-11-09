@@ -18,7 +18,6 @@ app.use(cors);
 const PORT = process.env.PORT || 3000;
 
 //Routes
-console.log(app.get);
 app.get('/', (req, res) => {
   res.status(200).send('You made it!');
 });

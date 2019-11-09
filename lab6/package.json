@@ -1,19 +1,24 @@
 {
-  "name": "lab6",
+  "name": "server-week-labs",
   "version": "1.0.0",
-  "description": "city_explorer",
-  "main": "server.js",
+  "description": "express.js practice # Project Name",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Pseudotsuga/server-week-labs.git"
+    "url": "git+https://github.com/Pseudotsuga/server-week-labs.git"
   },
-  "author": "Conor McCue",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pseudotsuga/server-week-labs/issues"
+  },
+  "homepage": "https://github.com/Pseudotsuga/server-week-labs#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
