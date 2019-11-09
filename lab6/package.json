@@ -1,8 +1,8 @@
 {
   "name": "lab6",
   "version": "1.0.0",
-  "description": "ciyt_explorer",
-  "main": "index.js",
+  "description": "city_explorer",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
