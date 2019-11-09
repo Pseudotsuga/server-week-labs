@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 3000;
 
 //Routes
 app.get('/', (req, res) => {
-  res.status(200).send('You made it!');
+  return res.status(200).send('You made it!');
 });
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
