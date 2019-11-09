@@ -26,7 +26,19 @@ app.get('/test', (req, res) => res.send('testing testing 123'));
 app.get('/location', locationRouter);
 
 function locationRouter(request, response){
-  console.log(request);
+  const city = request.query.data;
+  const geoData = require('./data/geo.json');
+  const locationData = new Location(city, geoData);
+  response.send(locationData);
+}
+
+function Location(city, geoData){
+  const cityData = geoData.results[0];
+
+  this.search_query = city;
+  this.formatted_query = cityData.formatted_address;
+  this.latitude = cityData.geometry.location.lat;
+  this.longitude = cityData.geometry.location.lng;
 }
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
