@@ -97,4 +97,10 @@ Finish time: 2:36 pm
 
 Actual time needed to complete: 15 minutes
 
-Feature 8: 
+Feature 8: Eventbrite API Call, Router, and Constructor
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 2:40 pm
+
+Finish time: Cancelled because of OAUTH requirement
