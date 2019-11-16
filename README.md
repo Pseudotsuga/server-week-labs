@@ -83,6 +83,14 @@ Estimate of time needed to complete: 30 minutes
 
 Start time: 1:50pm
 
-Finish time:
+Finish time: 2:20pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 30 minutes
+
+Feature 7: Weather API Call
+
+Estimate of time needed to complete: 35 minutes
+
+Start time: 2:21 pm
+
+Finish time: 
