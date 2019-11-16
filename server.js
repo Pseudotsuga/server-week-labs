@@ -3,12 +3,13 @@
 //Dependencies
 //Require triggers the dotenv mode nodule to export to this file in the form of an object. the config method then establishes the user environment by parsing variables from the .env file.
 require('dotenv').config()
-
 //Simililary to the example above this next line exports the express module to this file and stores it in a variable express.
 const express = require('express');
-
 //cors is a node module to prevent cross-origin scripting
 const cors = require('cors');
+//Superagent is a node module to assist in promisification.
+const superagent = require('superagent');
+
 
 //Setup app
 const app = express();
@@ -21,12 +22,19 @@ app.get('/', (request,response) => response.send('You made it!'));
 app.get('/location', locationRouter);
 app.get('/weather', weatherRouter)
 app.get('*', errorHandler);
+
+
 // Helper Functions
 function locationRouter(request, response){
   const city = request.query.data;
-  const geoData = require('./data/geo.json');
-  const locationData = new Location(city, geoData);
-  response.status(200).send(locationData);
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${request.query.data}&key=${process.env.GEOCODE_API_KEY}`;
+  superagent.get(url)
+    .then( data => {
+      const geoData = data.body;
+      const locationData = new Location(city, geoData);
+      response.status(200).send(locationData);
+    })
+    .catch(errorHandler);
 }
 
 function Location(city, geoData){

@@ -66,3 +66,23 @@ Start time: 1:01pm
 Finish time: 1:07pm
 
 Actual time needed to complete: 6 minutes.
+
+Feature 5: Data Formatting
+
+Estimate of time needed to complete: 0 minutes (incidentally completed during last lab)
+
+Start time: 1:15pm
+
+Finish time: 1:15pm
+
+Actual time needed to complete: 0 minutes.
+
+Feature 6: Location API
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 1:50pm
+
+Finish time:
+
+Actual time needed to complete: 
