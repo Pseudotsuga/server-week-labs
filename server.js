@@ -22,7 +22,7 @@ app.use(cors());
 app.get('/', (request,response) => response.send('You made it!'));
 app.get('/location', locationRouter);
 app.get('/weather', weatherRouter)
-
+app.get('*', errorHandler);
 // Helper Functions
 function locationRouter(request, response){
   const city = request.query.data;
@@ -55,6 +55,10 @@ function Weather(weatherData){
     }
   });
   return weatherArr;
+}
+
+function errorHandler(req, res){
+  res.status(500).send('Sorry, something went wrong');
 }
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
