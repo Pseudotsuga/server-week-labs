@@ -46,3 +46,61 @@ Start time: 8:20pm
 Finish time: 
 
 Actual time needed to complete: 
+
+Feature 3: Weather
+
+Estimate of time needed to complete: 40 minutes.
+
+Start time: 12:30pm
+
+Finish time: 12:54pm
+
+Actual time needed to complete: 24 minutes
+
+Feature 4: Error handling
+
+Estimate of time needed to complete: 20 minutes.
+
+Start time: 1:01pm
+
+Finish time: 1:07pm
+
+Actual time needed to complete: 6 minutes.
+
+Feature 5: Data Formatting
+
+Estimate of time needed to complete: 0 minutes (incidentally completed during last lab)
+
+Start time: 1:15pm
+
+Finish time: 1:15pm
+
+Actual time needed to complete: 0 minutes.
+
+Feature 6: Location API
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 1:50pm
+
+Finish time: 2:20pm
+
+Actual time needed to complete: 30 minutes
+
+Feature 7: Weather API Call
+
+Estimate of time needed to complete: 35 minutes
+
+Start time: 2:21 pm
+
+Finish time: 2:36 pm
+
+Actual time needed to complete: 15 minutes
+
+Feature 8: Eventbrite API Call, Router, and Constructor
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 2:40 pm
+
+Finish time: Cancelled because of OAUTH requirement
