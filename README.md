@@ -46,3 +46,23 @@ Start time: 8:20pm
 Finish time: 
 
 Actual time needed to complete: 
+
+Feature 3: Weather
+
+Estimate of time needed to complete: 40 minutes.
+
+Start time: 12:30pm
+
+Finish time: 12:54pm
+
+Actual time needed to complete: 24 minutes
+
+Feature 4: Error handling
+
+Estimate of time needed to complete: 20 minutes.
+
+Start time: 1:01pm
+
+Finish time: 1:07pm
+
+Actual time needed to complete: 6 minutes.
