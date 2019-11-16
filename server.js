@@ -9,12 +9,13 @@ const express = require('express');
 const cors = require('cors');
 //Superagent is a node module to assist in promisification.
 const superagent = require('superagent');
-
+// the pg node package eases postgres database integration for node/express
+const pg = require('pg');
 
 //Setup app
 const app = express();
-//Cors must be INVOKED
 app.use(cors());
+const client = new pg.Client(process.env.DATABASE_URL);
 const PORT = process.env.PORT;
 
 
@@ -48,7 +49,6 @@ function Location(city, geoData){
   this.longitude = cityData.geometry.location.lng;
 }
 
-//TODO: update this router to use superagent and make a call on the weather api 
 function weatherRouter(req, res){
   const url = `https://api.darksky.net/forecast/${process.env.WEATHER_API_KEY}/${req.query.data.latitude},${req.query.data.longitude}`;
   superagent.get(url)
@@ -77,4 +77,5 @@ function errorHandler(req, res){
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
 //A node http.Server is returned
-app.listen(PORT, () => console.log(`server is listening on port ${PORT}`));
+client.connect()
+  .then( () => app.listen(PORT, () => console.log(`server is listening on port ${PORT}`)));

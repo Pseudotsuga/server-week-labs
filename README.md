@@ -104,3 +104,15 @@ Estimate of time needed to complete: 60 minutes
 Start time: 2:40 pm
 
 Finish time: Cancelled because of OAUTH requirement
+
+Actual time needed to complete: n/a
+
+Feature 9: Database
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: 2:47pm
+
+Finish time: 2:57pm
+
+Actual time needed to complete: 10 minutes.
