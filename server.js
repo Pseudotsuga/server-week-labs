@@ -46,8 +46,8 @@ function Location(city, geoData){
   this.longitude = cityData.geometry.location.lng;
 }
 
+//TODO: update this router to use superagent and make a call on the weather api 
 function weatherRouter(req, res){
-  const darkSkyData = require('./data/darksky.json');
   const forecast = new Weather(darkSkyData);
   res.status(200).send(forecast);
 }
