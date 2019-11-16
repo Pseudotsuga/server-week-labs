@@ -15,6 +15,8 @@ const superagent = require('superagent');
 const app = express();
 //Cors must be INVOKED
 app.use(cors());
+const PORT = process.env.PORT;
+
 
 
 //Routes
@@ -48,8 +50,14 @@ function Location(city, geoData){
 
 //TODO: update this router to use superagent and make a call on the weather api 
 function weatherRouter(req, res){
-  const forecast = new Weather(darkSkyData);
-  res.status(200).send(forecast);
+  const url = `https://api.darksky.net/forecast/${process.env.WEATHER_API_KEY}/${req.query.data.latitude},${req.query.data.longitude}`;
+  superagent.get(url)
+    .then(data => {
+      const darkSkyData = data.body;
+      const forecast = new Weather(darkSkyData);
+      res.status(200).send(forecast);
+    })
+    .catch(errorHandler);
 }
 
 function Weather(weatherData){
@@ -69,5 +77,4 @@ function errorHandler(req, res){
 
 //Start listening, think about this like an event listener(the whole server code) attached to the port
 //A node http.Server is returned
-const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`server is listening on port ${PORT}`));
