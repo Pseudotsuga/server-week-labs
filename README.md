@@ -104,3 +104,35 @@ Estimate of time needed to complete: 60 minutes
 Start time: 2:40 pm
 
 Finish time: Cancelled because of OAUTH requirement
+
+Actual time needed to complete: n/a
+
+Feature 9: Database
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: 2:47pm
+
+Finish time: 2:57pm
+
+Actual time needed to complete: 10 minutes.
+
+Feature 10: Server/Database Check
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: 3:00pm
+
+Finish time: 3:55pm
+
+Actual time needed to complete: 55 minutes
+
+Feature 11: Heroku Server Provision
+
+Estimate of time needed to complete: 15 minutes
+
+Start time: 4:03
+
+End time: 4:08
+
+Actual time needed to complete: 5 minutes.
