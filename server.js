@@ -32,7 +32,6 @@ function Location(query, data){
   this.longitude = data.geometry.location.lng;
 }
 
-//Define a prototype function to save data to DB
 Location.prototype.save = function(){
   const SQL = `INSERT INTO locations
   (search_query, formatted_query, latitude, longitude)

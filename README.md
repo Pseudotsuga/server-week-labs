@@ -123,4 +123,16 @@ Estimate of time needed to complete: 45 minutes
 
 Start time: 3:00pm
 
-Finish time: 
+Finish time: 3:55pm
+
+Actual time needed to complete: 55 minutes
+
+Feature 11: Heroku Server Provision
+
+Estimate of time needed to complete: 15 minutes
+
+Start time: 4:03
+
+End time: 4:08
+
+Actual time needed to complete: 5 minutes.
