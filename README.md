@@ -116,3 +116,11 @@ Start time: 2:47pm
 Finish time: 2:57pm
 
 Actual time needed to complete: 10 minutes.
+
+Feature 10: Server/Database Check
+
+Estimate of time needed to complete: 45 minutes
+
+Start time: 3:00pm
+
+Finish time: 
